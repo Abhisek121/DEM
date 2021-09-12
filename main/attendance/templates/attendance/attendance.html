@@ -1,0 +1,18 @@
+{% for user in record %}
+        <TR>
+            <TD>{{ user.ids}}</TD>
+            <TD>{{ user.name}}</TD>
+            <TD>{{ user.card_id}}</TD>
+            <TD>{{ user.department}}</TD>
+            <TD>{{ user.date}}</TD>
+            <TD  class="table-success">{{ user.time_in}}</TD>
+            {% if user.time_out %}
+            <TD class="table-danger" >{{ user.time_out}}</TD>
+            {% endif %}
+            </TR>
+{% endfor %}
+
+
+
+  
+

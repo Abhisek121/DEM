@@ -1,0 +1,15 @@
+{% block content %} 
+
+{% load crispy_forms_tags %}         
+
+<!--Register--> 
+<div class="container py-5">
+	<h1>You have been logged out</h1>
+	<form method="POST">          
+		<button class="btn btn-primary" >
+			<a href="{% url 'login' %}">Log In?</a>
+		</button>
+	</form>
+</div>
+
+{% endblock %}

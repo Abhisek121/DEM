@@ -1,0 +1,16 @@
+{% extends 'attendance/basic.html' %}
+{% load crispy_forms_tags %}
+
+{% block body %}
+
+    <div class="row">
+        <form method="post" novalidate class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+            {% csrf_token %}
+            <input type="hidden" name="next" value="{{ next }}">
+            {{ form|crispy }}
+            <button type="submit" class="btn btn-success">Notify</button>
+        </form>
+        <br>
+    </div>
+
+{% endblock %}

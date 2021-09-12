@@ -1,0 +1,42 @@
+{% extends 'attendance/basic.html' %}
+
+{% block title %}Search User{% endblock %}
+
+{% block body %}
+
+<div class="container-fluid" >
+    <div class="row">
+
+      <div class="col-7 my-2" >
+        <div class="card border-primary">
+          <table class="table table-striped table-sm">
+            <thead class="table-dark">
+              <TR>
+                <TH>ID.No</TH>
+                <TH>Name</TH>
+                <TH>CardID</TH>
+                <TH>Email</TH>
+                <TH>Department</TH>
+                <TH>Address</TH>
+              </TR>
+            </thead>
+            <tbody id="cards" class="cards">
+              <TR>
+                <TD>{{ use.id }}</TD>
+                <TD>{{ use.name }}</TD>
+                <TD>{{ use.card_id }}</TD>
+                <TD>{{ use.email }}</TD>
+                <TD>{{ use.department }}</TD>
+                <TD>{{ use.address }}</TD> 
+              </TR>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      
+  
+
+{% endblock %}
